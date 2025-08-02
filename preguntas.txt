@@ -1,0 +1,9 @@
+--- PARTE 1 ---
+* ¿Cuál es la implicación del overfitting en modelos como Word2Vec?
+La implicacón con el modelo de Word2Vec es que los vectores de palabras no reflejan relaciones semánticas generales útiles, que es el objetivo de word2Vec. Y al tener eso lo que pasa es que el modelo es simple, entonces sufre overfitting cuando el vocabulario es pequeño, si son muchas épocas y si se usa sin estrategias de regularización. 
+
+* ¿Qué tan bien encontró palabras cercanas su modelo Word2Vec? ¿Podría mejorar? ¿Cómo podría mejorar?
+No tiene una mala precisión, sin embargo debería de mejorar en las palabras que son muy especificas, una forma de mejora es darle más datos de entrenamiento con datos variados y usando estrategias como la regularización o submuestreo con palabras frecuentes y contextos variados. 
+
+* A grandes rasgos, ¿cuál es la diferencia entre Word2Vec y BERT?
+La diferencia es que Word2Vec da una representación semántica rápida y ligera mientras que BERT es para una comprensión más profunda del lenguaje en el contexto.  Pero las limitaciones que tiene Word2Vec es que no puede captar el contexto ni la ambigüedad, entonces este es ideal para cuando se tienen registros límitados.  Esto es debido a que Word2Vec está basado en redes neuronales y BERT usa trandormadores y toma el contexto de manera bidireccional. 
